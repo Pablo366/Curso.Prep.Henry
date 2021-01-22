@@ -7,32 +7,85 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 /* Arrancaremos este ejercicio por vos: */
 #ejercicioUno {
-
+  display: block;
+  text-align: center;
 }
 
 
 /* Ejercicio 2: Posicionar el header */
 
 /* Acá va tu código */
-
+#ejercicioDos{
+  /*visibility: hidden;*/
+  display: none;
+}
 
 
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-
+#ejercicioTres{
+  position: relative;
+  margin-top: 100px;
+  margin-left: 200px;
+}
 
 
 /* Ejercicio 4: */
 
 /* Acá va tu código */
+#ejercicioCuatro{
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 
 
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-
+#ejercicioCinco{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 
 
 /* Ejercicio 6. */
+/* Sobreescribo regla */
+#ejercicioCinco{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* Ejercicio 7. */
+#ejercicioSiete{
+  display: flex;
+  flex-direction: column; /* pila 1 2 3 4*/
+  flex-direction: column-reverse; /* pila 4 3 2 1*/
+  justify-content: space-around; /* == center*/
+
+  /*flex-direction: row-reverse; *//* fila 4 3 2 1*/
+  justify-content: flex-start;
+  /*align-items: center;*/
+}
+
+#elementoCuatro{
+  order: -3;
+}
+
+#ejercicioSiete {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20%;
+}
+
+#elementoCuatro {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
